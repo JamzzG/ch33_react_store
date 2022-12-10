@@ -1,0 +1,13 @@
+.navbar {
+    background-color: cornflowerblue;
+    padding: 10px 0px;
+}
+
+.navbar h5 {
+    margin: 0px;
+    color: blue;
+}
+
+.navbar button {
+    color: brown;
+}
