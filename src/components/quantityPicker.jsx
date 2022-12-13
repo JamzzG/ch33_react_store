@@ -12,7 +12,7 @@ function QuantityPicker(props){
     }
 
     function handleDecrease(){
-        if (quantity===1) return;
+        if (quantity===0) return;
 
         let nextVal=quantity -1;
         setQuantity(nextVal);
@@ -21,7 +21,7 @@ function QuantityPicker(props){
 
     return (
         <div className="qty-picker">
-            <button disabled={quantity===1}onClick={handleDecrease}>-</button>
+            <button disabled={quantity===0}onClick={handleDecrease}>-</button>
             <label>{quantity}</label>
             <button onClick={handleIncrease}>+</button>
         </div>
