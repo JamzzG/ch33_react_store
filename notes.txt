@@ -1,0 +1,109 @@
+REACT NOTES:
+
+Node.js 
+
+npm =node package manager npmjs.com find JS packages CLI=Common Line Interface
+
+         2 terminals for windows (CMD and Powershell *Powershell is error prone) 
+
+         Check Node version in terminal:    node --version
+        <!-- space is important -->
+
+        clear screen prompt (Windows = cls)(Apple = clear) 
+        
+        
+        React is a JS library created by Facebook builds fast and interactive user interfaces.   Front end technologies. React is a piece of the UI it's
+        independet isolated and reusable components are the building blocks 
+        
+        Root Components: App.js (script.js for me) 
+        Every React app is basicially a  Component tree
+        
+        pwd for apple equals Project Word Directory
+        
+        To launch project, type:   npm start 
+        
+        CTRL+C stops everything
+
+        HTML inside a JS file on REACT is actually JSX
+
+        In HTMS class= is className=
+
+        everthing has to be closed even inputs </input>
+
+        Use .jsx for all components inside a react file
+        files names start with lowercase
+
+        all html elements inside a react file must be lowercase
+
+        REACT Functions must start with uppercase
+
+        Importing css files: import "./file.css";
+
+        file explorer go to project then click on path then type "cmd"
+
+
+EVERY COMPONENT NEEDS
+        // 1 import .css (make it now if not done)
+        // 2. create function with Capitalized name 
+        // 3 used Divs and create classes
+        // 4 export default
+
+curly braces inside js acts as "instruction mode"
+React doesnt usually use variables like "let" or "var"
+
+
+"STATE VARIABLES" are immutable (can't change the valuable)
+const [quantity, setQuantity] = useState(1);
+
+SAVING TO GITHUB FROM TERMINAL
+
+1.) #create Github repository on webside and cop URL
+
+2.) # initialize the repository
+    git init
+
+3.) # add the remote url
+    git remote add origin <URL>
+
+4.) # create a local copy
+    git add .
+    git commit -m "MESSAGE"
+
+5.) # Push /upload
+        # first push:
+        git push -u origin master 
+
+        # next time
+        git push
+
+CTRL+Click while hovering goes to the named FUNCTION
+
+CTRL+P jumps to recently used files within working folder
+
+To launch Command Center (find files fast) right click name of main folder at top then select Command Center  
+
+Random photo generator online: picsum.photos (no www. needed)
+works like Lorem Ipsum (random word generator) but for photos
+
+useEffect();  uses two parameters  arrow function => and list of dependencies []
+
+
+ARROW FUNCTIONS:
+
+An arrow function expression is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage:
+
+Arrow functions don't have their own bindings to this, arguments, or super, and should not be used as methods.
+
+Arrow functions cannot be used as constructors. Calling them with new throws a TypeError. They also don't have access to the new.target keyword.
+
+Arrow functions cannot use yield within their body and cannot be created as generator functions.
+
+this. changes within a function will be different with an arrow function.  Need arrow function to make this. work within REACT
+
+in JS this. will work the same with or without the arrow function.
+
+TERMINAL shortcut ( CTRL + `  )
+
+
+
+

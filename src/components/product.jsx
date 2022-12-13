@@ -1,15 +1,15 @@
 import "./product.css";
 import QuantityPicker from "./quantityPicker";
 
-function Product(){
+function Product(props){
     return (
         <div className="product">
                 <div>
-                    <img src="https://picsum.photos/200/200" alt="tumbleweed" />
-                    <h4>Tumbleweeds</h4>
-                    <label>
-                        55$
-                    </label>
+                    <img src= {"/images/"+props.data.image} width={200} alt=""/>
+                    <h4>{props.data.title}</h4>
+                    <label>${props.data.price.toFixed(2)}</label>
+
+                    
                     <QuantityPicker></QuantityPicker>
                 </div>
         </div>
