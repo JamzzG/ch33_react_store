@@ -104,6 +104,16 @@ in JS this. will work the same with or without the arrow function.
 
 TERMINAL shortcut ( CTRL + `  )
 
+HANDLER EVENTS
+    onChange (anytime something changes)
 
+
+
+
+Homework: 
+
+git add .
+git commit -m “fsdi 107 #4”
+git push
 
 

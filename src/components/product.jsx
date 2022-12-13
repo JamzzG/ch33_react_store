@@ -1,16 +1,24 @@
 import "./product.css";
 import QuantityPicker from "./quantityPicker";
+import { useState} from "react";
 
 function Product(props){
+const [quantity, setQuantity] = useState(1);
+
+    function handleQuantityChange(qty){
+        console.log ("quantity change", qty);
+        setQuantity(qty); 
+    
+    }
     return (
         <div className="product">
-                <div>
-                    <img src= {"/images/"+props.data.image} width={200} alt=""/>
+                <div className="items">
+                    <img src= {"/images/"+props.data.image}  alt=""/>
                     <h4>{props.data.title}</h4>
-                    <label>${props.data.price.toFixed(2)}</label>
-
+                    <label>Each: ${props.data.price.toFixed(2)}</label>
+                    <label>Total: ${(props.data.price*quantity).toFixed(2)}</label>
                     
-                    <QuantityPicker></QuantityPicker>
+                    <QuantityPicker onChange={handleQuantityChange} />
                 </div>
         </div>
     );

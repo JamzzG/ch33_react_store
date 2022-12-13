@@ -1,15 +1,19 @@
 .App {
+    background-color: burlywood;
     text-align: center;
 }
 
 .App-logo {
-    height: 40vmin;
+    height: 10vmin;
     pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media {
     .App-logo {
-        animation: App-logo-spin infinite 20s linear;
+        animation: App-logo-spin infinite 10s;
     }
 }
 
@@ -32,8 +36,36 @@
         transform: rotate(0deg);
     }
     to {
+        transform: rotate(-360deg);
+    }
+    to {
         transform: rotate(360deg);
     }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes App-logo-slide {
+    from {
+        transform: translateX(100%);
+    }
+    25% {
+        transform: translateX(-50%);
+    }
+    50% {
+        transform: translateX(25%);
+    }
+    75% {
+        transform: translateX(-75%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.App-logo-roll {
+    animation: App-logo-slide infinite 90s;
 }
 
 .page-content {

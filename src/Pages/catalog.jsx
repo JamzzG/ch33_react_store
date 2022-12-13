@@ -3,6 +3,8 @@ import Product from '../components/product'
 import DataService from '../services/dataService';
 import { useEffect, useState } from "react";
 
+
+
 function Catalog()  {
 
     const [products, setProducts] =useState([]);
@@ -17,9 +19,9 @@ function Catalog()  {
 
     return (
         <div className="catalog">
-            <h3>Buy this schlock!</h3>
-            <h5>We have {products.length} outstanding offerings for you!</h5>
-            <div classname="products">
+            <h3>Tumbleweed Depot</h3>
+            <h5>Bringing the Wild West to you with {products.length} amazing options to choose from!</h5>
+            <div className="products">
                 {products.map (prod => <Product data={prod}></Product>)}
             </div>
                         
