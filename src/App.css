@@ -4,11 +4,12 @@
 }
 
 .App-logo {
-    height: 10vmin;
+    margin-top: 150px;
+    height: 8vmin;
     pointer-events: none;
     position: absolute;
     z-index: 1;
-    top: 50px;
+    top: 45px;
 }
 
 @media {
@@ -33,7 +34,11 @@
 
 @keyframes App-logo-spin {
     from {
-        transform: rotate(0deg);
+        transform: rotate(360deg);
+    }
+    to {
+        animation-direction: reverse;
+        transform: rotate(360deg);
     }
     to {
         transform: rotate(-360deg);
@@ -42,8 +47,14 @@
         transform: rotate(360deg);
     }
     to {
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+to {
+    transform: rotate(-360deg);
 }
 
 @keyframes App-logo-slide {

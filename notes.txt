@@ -13,20 +13,50 @@ npm =node package manager npmjs.com find JS packages CLI=Common Line Interface
         
         
         React is a JS library created by Facebook builds fast and interactive user interfaces.   Front end technologies. React is a piece of the UI it's
-        independet isolated and reusable components are the building blocks 
+        independent, isolated, and reusable components are the building blocks 
         
         Root Components: App.js (script.js for me) 
         Every React app is basicially a  Component tree
         
         pwd for apple equals Project Word Directory
         
-        To launch project, type:   npm start 
-        
+        To launch project, type:   npm start (NPM = Node Project Manager)
+
+        To launch BOOTSTRAP, type: npm install BOOTSTRAP (before starting project in cmd prompt)
+            Then import BOOTSTRAP into top of App.js page   
+                You can find the path under node_modules
+                    import "bootstrap/dist/css/bootstrap.min.css";
+                    import "bootstrap/dist/js/bootstrap.min.js";
+
+
+                    
+    ***Installing React RouterReact Router DOM is an npm package that enables you to implement dynamic routing in a web app. It allows you to display pages and allow users to navigate them. It is a fully-featured client and server-side routing library for React:  ***
+
+    npm install react-router-dom -s
+
+        ***import into top of App.js page***
+            import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+
+Wrapper components grab componets and elements and provides functionality but wont' display anything on the screen.   Functionality without looks    
+
+<Routes>
+            <Route path="/" element={<Home />} ></Route>
+            <Route path="/home" element={<Home />} ></Route>
+            <Route path="/catalog" element={<Catalog />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+            <Route path="/cart" element={<Cart />}></Route>
+</Routes>
+
+
+***Homework 
+    State Management on Front End 
+
         CTRL+C stops everything
 
-        HTML inside a JS file on REACT is actually JSX
+        HTML inside a JS file on REACT is actually  .JSX
 
-        In HTMS class= is className=
+        In HTML class= is className=
 
         everthing has to be closed even inputs </input>
 
@@ -55,26 +85,7 @@ React doesnt usually use variables like "let" or "var"
 "STATE VARIABLES" are immutable (can't change the valuable)
 const [quantity, setQuantity] = useState(1);
 
-SAVING TO GITHUB FROM TERMINAL
 
-1.) #create Github repository on webside and cop URL
-
-2.) # initialize the repository
-    git init
-
-3.) # add the remote url
-    git remote add origin <URL>
-
-4.) # create a local copy
-    git add .
-    git commit -m "MESSAGE"
-
-5.) # Push /upload
-        # first push:
-        git push -u origin master 
-
-        # next time
-        git push
 
 CTRL+Click while hovering goes to the named FUNCTION
 
@@ -104,16 +115,51 @@ in JS this. will work the same with or without the arrow function.
 
 TERMINAL shortcut ( CTRL + `  )
 
+
 HANDLER EVENTS
     onChange (anytime something changes)
 
+changed code (in case i typed something wrong)
+function handleQuantityChange(qty) {
+        console.log("quantity change", qty);
+        
+    }
+<QuantityPicker onChange={handleQuantityChange} />
+
+
+return div.home will auto complete to 
+return <div className="home">Welcome</div>
+
+SPA Single Page Applications are one page websites.  Quick and Simple.
+
+Web Applications have interactive features
 
 
 
-Homework: 
 
-git add .
-git commit -m “fsdi 107 #4”
-git push
+SAVING TO GITHUB FROM TERMINAL
+
+1.) #create Github repository on webside and cop URL
+
+2.) # initialize the repository
+    git init
+
+3.) # add the remote url
+    git remote add origin <URL>
+
+4.) # create a local copy
+    git add .
+    git commit -m "MESSAGE"
+
+5.) # Push /upload
+        # first push:
+        git push -u origin master 
+
+        # next time
+        git push
 
 
+Moving Lines of code.  highlight and press ALT then up/down arrows
+
+Use Statements
+const [variable,setFunction] = useState ();  be sure to import it at top of file

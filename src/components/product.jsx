@@ -3,13 +3,20 @@ import QuantityPicker from "./quantityPicker";
 import { useState} from "react";
 
 function Product(props){
-const [quantity, setQuantity] = useState(1);
+const [quantity, setQuantity] = useState(0);
 
     function handleQuantityChange(qty){
         console.log ("quantity change", qty);
         setQuantity(qty); 
     
     }
+
+// Alternative function for getting total:
+// function getTotal() {
+//     let total = props.data.price * quantity;
+//     return total.toFixed(2);
+// }
+
     return (
         <div className="product">
                 <div className="items">

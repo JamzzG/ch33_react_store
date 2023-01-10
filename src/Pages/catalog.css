@@ -3,7 +3,6 @@
 .catalog h3 {
     font-family: "Bleeding Cowboys", sans-serif;
     font-size: 95px;
-    margin-bottom: -10px;
     color: darkred;
     text-shadow: black 4px 4px 4px;
     z-index: -1;
@@ -11,8 +10,9 @@
 
 .catalog h5 {
     font-size: x-large;
+    margin-top: 60px;
 }
 
 .catalog {
-    margin-top: -208px;
+    margin-top: 40px;
 }
