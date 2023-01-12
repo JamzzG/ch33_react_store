@@ -1,11 +1,9 @@
 .navbar {
     background-color: cornflowerblue;
-    padding: 10px 0px;
-    padding-bottom: 75px;
+    padding: 40px;
 }
 
 .navbar h5 {
-    margin: 0px;
     color: blue;
 }
 

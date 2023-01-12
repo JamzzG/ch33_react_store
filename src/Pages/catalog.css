@@ -5,7 +5,7 @@
     font-size: 95px;
     color: darkred;
     text-shadow: black 4px 4px 4px;
-    z-index: -1;
+    z-index: +6;
 }
 
 .catalog h5 {

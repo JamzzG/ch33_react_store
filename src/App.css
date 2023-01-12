@@ -1,21 +1,21 @@
 .App {
-    background-color: burlywood;
+    background-image: url(../public/images/DALL·E\ Desert.png);
+    background-size: contain;
     text-align: center;
+    background-size: 1200px;
 }
 
 .App-logo {
-    margin-top: 150px;
+    margin-top: 100px;
     height: 8vmin;
     pointer-events: none;
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     top: 45px;
 }
 
-@media {
-    .App-logo {
-        animation: App-logo-spin infinite 10s;
-    }
+.App-logo {
+    animation: App-logo-spin 90s ease-in-out infinite;
 }
 
 .App-header {
@@ -33,33 +33,27 @@
 }
 
 @keyframes App-logo-spin {
-    from {
-        transform: rotate(360deg);
+    0% {
+        transform: rotate(4turn);
     }
-    to {
-        animation-direction: reverse;
-        transform: rotate(360deg);
+
+    25.87% {
+        transform: rotate(-2turn);
     }
-    to {
-        transform: rotate(-360deg);
+    50% {
+        transform: rotate(2turn);
     }
-    to {
-        transform: rotate(360deg);
+    75% {
+        transform: rotate(-5turn);
     }
-    to {
-        transform: rotate(-360deg);
+    100% {
+        transform: rotate(0turn);
     }
-    to {
-        transform: rotate(-360deg);
-    }
-}
-to {
-    transform: rotate(-360deg);
 }
 
 @keyframes App-logo-slide {
     from {
-        transform: translateX(100%);
+        transform: translateX(55%);
     }
     25% {
         transform: translateX(-50%);
@@ -68,15 +62,15 @@ to {
         transform: translateX(25%);
     }
     75% {
-        transform: translateX(-75%);
+        transform: translateX(-55%);
     }
     100% {
-        transform: translateX(100%);
+        transform: translateX(55%);
     }
 }
 
 .App-logo-roll {
-    animation: App-logo-slide infinite 90s;
+    animation: App-logo-slide infinite ease-in-out 90s;
 }
 
 .page-content {

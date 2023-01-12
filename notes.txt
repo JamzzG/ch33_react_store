@@ -163,3 +163,59 @@ Moving Lines of code.  highlight and press ALT then up/down arrows
 
 Use Statements
 const [variable,setFunction] = useState ();  be sure to import it at top of file
+
+
+Solving where to put the cart array:  We have data we need to share between two non-immediately related components.
+
+State Management solutions Redux or React Context
+    
+    Redux:
+         Popular, can be used in JS Angular React but it is Complex
+            Redux is a single source of truth
+
+                a. Store holds the data for entire app
+
+                b. Actions the events that occur in the app based on user input, and trigger updates in th state.
+
+                c. Reducers are functions that will be notified when an action is dispatched and should modify the state.
+
+    React Context 
+        Belongs only to React, Easier, not suitable for multiple times per second updates.
+
+            a. belongs to React
+
+            b. Easier
+
+            c. Not suitable for multiple times per second updates (limit is around
+                100/second)
+
+            d. don't overuse this, it makes the component reuse more difficult and it tends to slow down performance.
+
+
+            Created a STORE file in SVC
+                in STORE created dataContext file
+                with DataContext function using createContext 
+                with variable and functions to change them.
+                then export
+
+                created a graber globalData.jsx in store folder
+
+                imported globalData into app.js
+                wrapped entire page inside BrowerRouter inside <GlobalData> and </GlobalData> ....and webpages disappeared.
+                put props inside GlobalData variable. and output the props.children
+
+ import DataContext from './dataContext';
+
+function GlobalData(props) {
+    return (  
+    <DataContext.Provider>{props.children}</DataContext.Provider>
+    );
+}
+
+export default GlobalData;
+
+
+
+
+
+
