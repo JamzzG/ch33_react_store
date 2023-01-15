@@ -1,78 +1,10 @@
 .App {
     background-image: url(../public/images/DALL·E\ Desert.png);
-    background-size: contain;
     text-align: center;
-    background-size: 1200px;
-}
-
-.App-logo {
-    margin-top: 100px;
-    height: 8vmin;
-    pointer-events: none;
-    position: absolute;
-    z-index: 3;
-    top: 45px;
-}
-
-.App-logo {
-    animation: App-logo-spin 90s ease-in-out infinite;
-}
-
-.App-header {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-    0% {
-        transform: rotate(4turn);
-    }
-
-    25.87% {
-        transform: rotate(-2turn);
-    }
-    50% {
-        transform: rotate(2turn);
-    }
-    75% {
-        transform: rotate(-5turn);
-    }
-    100% {
-        transform: rotate(0turn);
-    }
-}
-
-@keyframes App-logo-slide {
-    from {
-        transform: translateX(55%);
-    }
-    25% {
-        transform: translateX(-50%);
-    }
-    50% {
-        transform: translateX(25%);
-    }
-    75% {
-        transform: translateX(-55%);
-    }
-    100% {
-        transform: translateX(55%);
-    }
-}
-
-.App-logo-roll {
-    animation: App-logo-slide infinite ease-in-out 90s;
+    background-size: 100%;
+    position: contain;
 }
 
 .page-content {
-    min-height: calc(100vh - 150px);
+    min-height: calc(100vh - 240px);
 }

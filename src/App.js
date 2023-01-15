@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/navBar';
+import Title from './components/title';
 import Footer from './components/footer';
 import QuantityPicker from './components/quantityPicker';
 import Catalog from './pages/catalog';
@@ -19,6 +20,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 
+
 // remember file starts with lowercase and function starts with an uppercase
 
 function App() {
@@ -28,9 +30,7 @@ function App() {
       <BrowserRouter>
         <div className="App" >
           <NavBar />
-          <div className="App-logo-roll">
-            <img src="../images/tumbleweed-clip-art.png" className="App-logo" alt="logo" />
-          </div>
+          <Title />
 
           <div className='page-content'>
             <Routes>

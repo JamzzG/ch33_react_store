@@ -1,0 +1,25 @@
+.cart img {
+    width: 90px;
+}
+
+.cart .cart-item {
+    background-color: burlywood;
+    display: flex;
+    margin: 10px 30px;
+    padding: 10px;
+    border: 1px solid gray;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-item h6 {
+    flex: 4;
+}
+
+.cart-item label {
+    flex: 2;
+}
+
+.cart-item {
+    flex: 1;
+}

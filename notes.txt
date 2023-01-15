@@ -216,6 +216,39 @@ export default GlobalData;
 
 
 
+addProduct to cart calls a function ouside of component inside globalData
+import the dataContext and the function 
 
 
+Recap
+Product Component wants to store data in contents
+When you click on the button it wants to change the array to add new prodcuts
+but the array is an immutable object. You can't change it directly
 
+Instead we need to have the component call a function and the function needs to update the array
+
+
+the array exists on a state variable and you can't modify technologies
+to change a state variable you have to call a set
+       cart.push.product for example isn't allowed.
+       also let copy=nums; doesn't creat a copy it just adds a name to nums variable
+
+//modify a state variable with obj {} or []
+        // create a copy, modify the copy, set the copy  Variable in example is named "copy"
+spread operator =   ...
+
+  let copy = [...cart];                          ***This creates the copy
+        copy.push(product);                 ***This modifys the copy
+        setCart(copy);                          ***This replaces original with copy
+
+    function addProductToCart(product) {
+        let copy = [...cart];
+        copy.push(product);
+        setCart(copy);
+    }
+
+    Finally, go back to where function is called and insert the props.data in this case it is around line 20 in product.jsx
+            addProductToCart(props.data); //calling the global function
+
+
+ Homework is JS Spread Operator 

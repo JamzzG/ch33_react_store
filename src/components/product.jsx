@@ -15,7 +15,7 @@ function Product(props) {
 
     function updateCart() {
         console.log("updated cart", props.data);
-        addProductToCart(); //calling the global function
+        addProductToCart(props.data); //calling the global function
     }
 
     // Alternative function for getting total:
