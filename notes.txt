@@ -250,5 +250,25 @@ spread operator =   ...
     Finally, go back to where function is called and insert the props.data in this case it is around line 20 in product.jsx
             addProductToCart(props.data); //calling the global function
 
+creating cart total in navbar
+useContext (DataContext).cart;
+
+Right now this only changes each page. Because we are using anchors <a> href
+within React, change them with pagination
+
+most state managment systems save things in variable
+
+
+need to import DataContext and Import
+
+inside cart.jsx
+    we are mapping the cart data so it will display all the info on the screen
+           <ul>
+                {cart.map(prod) => (
+                    <li>{prod.title}</li>
+                )}
+            </ul>
+
 
  Homework is JS Spread Operator 
+ Made title component separate to play with components  
