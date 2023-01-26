@@ -2,29 +2,31 @@
 
 .title {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: left;
+    margin-top: -55px;
 }
 .title h3 {
     font-family: "Bleeding Cowboys", sans-serif;
     font-size: 95px;
-    color: darkred;
     text-shadow: black 4px 4px 4px;
-    z-index: +6;
+    z-index: 0;
+    color: darkred;
 }
 
 .title h5 {
-    font-size: x-large;
+    font-size: 30px;
     margin-top: 60px;
+    margin-left: 90px;
 }
 
 .icon {
-    margin-top: calc(100vh - 300px);
+    margin-top: calc(100vh - 220px);
     height: 8vmin;
     pointer-events: none;
     position: absolute;
-    z-index: 3;
+    z-index: 0;
     top: 0px;
+    overflow: hidden;
 }
 
 .icon {
@@ -33,6 +35,7 @@
 
 .icon-accross {
     animation: icon-slide infinite ease-in-out 100s;
+    width: 100%;
 }
 
 .icon-hop {
@@ -51,16 +54,16 @@
         transform: rotate(6turn);
     }
     25.87% {
-        transform: rotate(-2turn);
+        transform: rotate(-3turn);
     }
     50% {
         transform: rotate(2turn);
     }
     75% {
-        transform: rotate(-5turn);
+        transform: rotate(-4turn);
     }
     100% {
-        transform: rotate(0turn);
+        transform: rotate(5turn);
     }
 }
 
@@ -69,7 +72,7 @@
         transform: translateX(55%);
     }
     25% {
-        transform: translateX(-50%);
+        transform: translateX(-52%);
     }
     50% {
         transform: translateX(25%);
@@ -84,54 +87,114 @@
 
 @keyframes icon-bounce {
     0% {
-        transform: translateY(-20px);
+        transform: translateY(-55px);
     }
 
-    6.5% {
-        transform: translateY(0px);
+    6.75% {
+        transform: translateY(-44px);
     }
 
-    11.75% {
-        transform: translateY(-70px);
-    }
-
-    16.5% {
-        transform: translateY(0px);
-    }
-
-    18.5% {
+    9% {
         transform: translateY(-30px);
     }
 
-    24.5% {
+    11.75% {
+        transform: translateY(-50px);
+    }
+
+    15.5% {
+        transform: translateY(-225px);
+    }
+
+    17.5% {
+        transform: translateY(-205px);
+    }
+
+    20.5% {
+        transform: translateY(-214px);
+    }
+
+    23.5% {
+        transform: translateY(-210px);
+    }
+
+    26.5% {
+        transform: translateY(-217px);
+    }
+
+    31% {
+        transform: translateY(-210px);
+    }
+
+    33% {
+        transform: translateY(-225px);
+    }
+
+    36% {
+        transform: translateY(-180px);
+    }
+
+    42.5% {
+        transform: translateY(-30px);
+    }
+
+    44.25% {
+        transform: translateY(-35px);
+    }
+
+    46% {
+        transform: translateY(-20px);
+    }
+
+    47.25% {
+        transform: translateY(-22px);
+    }
+
+    48% {
+        transform: translateY(-20px);
+    }
+
+    54.25% {
+        transform: translateY(-20px);
+    }
+
+    55.25% {
+        transform: translateY(-35px);
+    }
+
+    57% {
+        transform: translateY(-30px);
+    }
+
+    65.25% {
+        transform: translateY(-225px);
+    }
+
+    66.5% {
+        transform: translateY(-210px);
+    }
+
+    76% {
+        transform: translateY(-210px);
+    }
+
+    76.1% {
         transform: translateY(0px);
     }
 
-    34.% {
-        transform: translateY(30px);
-    }
-
-    44% {
-        transform: translateY(-15px);
-    }
-
-    47% {
+    85.35% {
         transform: translateY(0px);
     }
 
-    70% {
-        transform: translateY(-70px);
+    87% {
+        transform: translateY(-200px);
     }
 
-    75% {
-        transform: translateY(0px);
+    90% {
+        transform: translateY(-30px);
     }
 
     93.5% {
-        transform: translateY(-140px);
-    }
-
-    100% {
-        transform: translateY(0px);
+        transform: translateY(-40px);
     }
 }

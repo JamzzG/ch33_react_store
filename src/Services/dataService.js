@@ -1,3 +1,7 @@
+import axios from 'axios';
+
+
+
 const catalog = [
     {
         title: "Tumble-Pigweed",
@@ -66,8 +70,9 @@ const catalog = [
 ];
 
 class DataService {
-    getCatalog() {
-        return catalog;
+    async getCatalog() {
+        let response = await axios.get("http://127.0.0.1:5000/api/catalog")
+        return response.data;
     }
 }
 

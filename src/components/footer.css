@@ -1,9 +1,8 @@
 .footer {
-    color: red;
-    background-color: sandybrown;
+    color: darkred;
+    text-shadow: black 2px, 3px, 5px;
 }
 
 .footer label {
-    background-color: bisque;
     color: saddlebrown;
 }

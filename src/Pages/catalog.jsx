@@ -8,12 +8,15 @@ function Catalog() {
 
     //when the component loads
     useEffect(() => {
-        console.log("catalog loaded");
-        let service = new DataService();
-        let prodList = service.getCatalog();
-        setProducts(prodList);
+        loadData();
     }, []);
 
+    async function loadData() {
+        console.log("catalog loaded");
+        let service = new DataService();
+        let prodList = await service.getCatalog();
+        setProducts(prodList);
+    }
     return (
         <div className="catalog">
             <h5>We have {products.length} amazing options to choose from!</h5>

@@ -1,12 +1,11 @@
 import "./footer.css";
 
-function Footer(){
-    return(
+function Footer() {
+    return (
         <div className="footer">
-            <button>Click this one too!</button>
-            Copywrite 2022 DaMastIdeas 
-            <label>By: James Grantham</label>
-
+            <h5>
+                Copywrite 2023 Z<sup>2</sup> Designed by James Grantham.
+            </h5>
         </div>
     );
 }

@@ -3,8 +3,10 @@
     text-align: center;
     background-size: 100%;
     position: contain;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .page-content {
-    min-height: calc(100vh - 240px);
+    min-height: calc(100vh - 180px);
 }

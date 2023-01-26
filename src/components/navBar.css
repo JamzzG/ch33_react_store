@@ -1,12 +1,19 @@
 .navbar {
-    background-color: cornflowerblue;
-    padding: 40px;
+    padding: 10px;
 }
 
 .navbar h5 {
+    font-size: 32px;
     color: blue;
 }
 
-.navbar button {
+.navbar btn {
     color: brown;
+}
+
+.cart-count {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(burlywood, darkred, burlywood);
+    margin-right: 20px;
 }

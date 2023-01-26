@@ -57,12 +57,12 @@ function NavBar() {
                         </li>
                     </ul>
                     <Link to="cart">
-                        <form className="btn btn-outline-light">
-                            Items in cart:{" "}
-                            <span className="badge rounded-pill text-bg-success">
+                        <div className="cart-count btn btn-outline-light">
+                            <div>Items in cart:</div>
+                            <div className="badge rounded-pill text-bg-success">
                                 {cart.length}
-                            </span>
-                        </form>
+                            </div>
+                        </div>
                     </Link>
                 </div>
             </div>
