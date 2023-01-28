@@ -1,10 +1,10 @@
 import "./navBar.css";
-import { useContext } from "react";
+// import { useContext } from "react";
 import DataContext from "./../store/dataContext";
 import { Link } from "react-router-dom";
 
 function NavBar() {
-    const cart = useContext(DataContext).cart;
+    // const cart = useContext(DataContext).cart;
 
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -56,14 +56,14 @@ function NavBar() {
                             </Link>
                         </li>
                     </ul>
-                    <Link to="cart">
-                        <div className="cart-count btn btn-outline-light">
+                    {/* <Link to="cart">
+                        <div className="cart-count">
                             <div>Items in cart:</div>
                             <div className="badge rounded-pill text-bg-success">
                                 {cart.length}
                             </div>
                         </div>
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
         </nav>

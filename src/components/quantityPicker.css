@@ -1,9 +1,45 @@
-.qty-picker button {
-    margin: 15px;
+.qty-picker * {
+    margin-top: 2px;
+    padding: 1px;
+    text-align: center;
+    background-color: rgba(200, 16, 16, 0.436);
 }
 
-.qty-picker label {
+.add {
+    z-index: 4;
+    font-size: 16px;
+    margin-top: 5px;
     display: inline-block;
-    width: 15px;
+    width: 25px;
     font-weight: bold;
+    text-align: center;
+    border-bottom: black solid 2px;
+    border-top: black solid 2px;
+}
+
+.add:hover {
+    background-color: yellow;
+}
+
+.plus {
+    z-index: 4;
+    border-radius: 0px 150px 150px 0px;
+    width: 25px;
+    border-left: none;
+    font-weight: 700;
+    margin-bottom: 5px;
+    height: auto;
+}
+
+.plus:hover {
+    background-color: yellow;
+}
+
+.minus {
+    z-index: 4;
+    width: 25px;
+    border-radius: 150px 0px 0px 150px;
+    border-right: none;
+    font-weight: 900;
+    text-shadow: 4px 0px black;
 }

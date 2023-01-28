@@ -5,13 +5,14 @@
     width: 220px;
     display: inline-block;
     margin: 5px;
+    position: relative;
 }
 
-.product:hover {
+/* .product:hover {
     border-color: darkred;
     box-shadow: black 5px 5px 5px;
     background-color: rgb(144, 239, 0);
-}
+} */
 
 .product h5 {
     font-size: large;
@@ -24,8 +25,15 @@
     height: 200px;
 }
 
-.product .items {
+.add {
+    font-size: medium;
+}
+
+label {
+    font-size: 18px;
+}
+
+span {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-evenly;
 }

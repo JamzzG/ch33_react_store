@@ -272,3 +272,59 @@ inside cart.jsx
 
  Homework is JS Spread Operator 
  Made title component separate to play with components  
+
+
+ To Connect database.js first we need to install axios
+npm install -s axios
+
+import axios from axios into database.js
+
+
+return gets changed to:
+
+let response = axios.get("http://127.0.0.1:5000/api/catalog")
+
+    console.log (response);
+    return response;
+
+To deal with asynchronous response use async/await 
+async getCatalog() {
+    let response = await axios.get("http://127.0.0.1:5000/api/catalog")
+
+
+
+
+@@@Homework investigate JS Async/Await
+
+
+
+1.) Start Server
+    a terminal in the location (server)
+    activate the venv
+    open the code
+    run the server.py script
+
+Start the front end
+
+
+The downside of this project is it's too much for the small size of this stack.
+The upsides...separating projects can be good for teams.
+    React is a single page application.  It is extremely fast.
+front end 
+    js and react
+
+connection 
+    axios
+
+backend 
+    python and flask
+
+database
+    mongodb
+
+
+Professer likes using React and Flask 
+
+React has JS built in...so it can do the calcs natively
+
+Python projects are simpler but there is a time cost.

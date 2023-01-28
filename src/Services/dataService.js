@@ -1,15 +1,14 @@
 import axios from 'axios';
 
 
-
 const catalog = [
     {
-        title: "Tumble-Pigweed",
-        sciName: "Amaranthus Albus",
-        price: 11,
-        category: "tumbleweed",
-        image: "tumble-pigweed.jpg",
-        ref: "forestryimages.org",
+        "title": "Tumble-Pigweed",
+        "sciName": "Amaranthus Albus",
+        "price": 11,
+        "category": "tumbleweed",
+        "image": "tumble-pigweed.jpg",
+        "ref": "forestryimages.org",
     },
     {
         title: "Maryam's flower",

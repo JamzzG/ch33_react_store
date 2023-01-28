@@ -30,5 +30,3 @@ function Catalog() {
 }
 
 export default Catalog;
-
-// Homework: Arrow Functions for JS

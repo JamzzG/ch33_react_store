@@ -5,7 +5,6 @@ import DataContext from "../store/dataContext";
 
 function Product(props) {
     const [quantity, setQuantity] = useState(1);
-
     let addProductToCart = useContext(DataContext).addProductToCart;
 
     function handleQuantityChange(qty) {
@@ -18,23 +17,22 @@ function Product(props) {
         addProductToCart(props.data); //calling the global function
     }
 
-    // Alternative function for getting total:
-    // function getTotal() {
-    //     let total = props.data.price * quantity;
-    //     return total.toFixed(2);
-    // }
-
     return (
         <div className="product">
             <div className="items">
                 <img src={"/images/" + props.data.image} alt="" />
                 <h4>{props.data.title}</h4>
                 <label>Each: ${props.data.price.toFixed(2)}</label>
+                <br />
                 <label>
                     Total: ${(props.data.price * quantity).toFixed(2)}
                 </label>
-                <button onClick={updateCart}>Add</button>
-                <QuantityPicker onChange={handleQuantityChange} />
+                <span>
+                    <QuantityPicker
+                        onChange={handleQuantityChange}
+                        updateCart={updateCart}
+                    />
+                </span>
             </div>
         </div>
     );

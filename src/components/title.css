@@ -1,22 +1,56 @@
 @import url("https://fonts.cdnfonts.com/css/bleeding-cowboys");
 
 .title {
+    z-index: 1;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     margin-top: -55px;
 }
 .title h3 {
+    position: relative;
+    margin-left: 850px;
+    margin-top: -15px;
     font-family: "Bleeding Cowboys", sans-serif;
-    font-size: 95px;
-    text-shadow: black 4px 4px 4px;
-    z-index: 0;
+    font-size: 100px;
+    text-shadow: rgb(0, 0, 0) -8px 4px 8px;
+    z-index: 2;
     color: darkred;
 }
 
-.title h5 {
-    font-size: 30px;
-    margin-top: 60px;
-    margin-left: 90px;
+.cart-count {
+    margin-top: -30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        to top right,
+        rgb(241, 253, 3),
+        orangered
+    );
+    width: 85px;
+    height: 85px;
+    border-radius: 0 0 0 85px;
+    -moz-border-radius: 0 0 0 85px;
+    -webkit-border-radius: 0 0 0 85px;
+}
+
+:link {
+    text-decoration: none;
+}
+
+.counter-label {
+    margin-left: 25px;
+    font-family: sans-serif;
+    color: darkred;
+}
+
+.counter {
+    font-family: "Bleeding Cowboys", sans-serif;
+    color: darkred;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: -10px;
+    margin-left: 25px;
 }
 
 .icon {
@@ -74,6 +108,9 @@
     25% {
         transform: translateX(-52%);
     }
+    26% {
+        transform: translateX(-52%);
+    }
     50% {
         transform: translateX(25%);
     }
@@ -91,19 +128,19 @@
     }
 
     6.75% {
-        transform: translateY(-44px);
+        transform: translateY(-34px);
     }
 
-    9% {
+    11% {
         transform: translateY(-30px);
     }
 
     11.75% {
-        transform: translateY(-50px);
+        transform: translateY(-55px);
     }
 
-    15.5% {
-        transform: translateY(-225px);
+    14.5% {
+        transform: translateY(-245px);
     }
 
     17.5% {
@@ -119,7 +156,7 @@
     }
 
     26.5% {
-        transform: translateY(-217px);
+        transform: translateY(-210px);
     }
 
     31% {
@@ -187,7 +224,7 @@
     }
 
     87% {
-        transform: translateY(-200px);
+        transform: translateY(-180px);
     }
 
     90% {
